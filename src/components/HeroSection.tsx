@@ -12,8 +12,8 @@ const HeroSection = () => {
 
   const competitivePlatforms = [
     { name: "CodeChef", href:'https://www.codechef.com/users/mummykaisihai' , score: "1792 max" },
-    { name: "Codeforces", href: "https://codeforces.com/profile/mummykaisihai", score: "1457 max" },
-    { name: "LeetCode", href: "https://leetcode.com/u/mummy_kaisi_hai/", score: "Active" },
+    { name: "Codeforces", href: "https://codeforces.com/profile/mummykaisihai", score: "1485 max" },
+    { name: "LeetCode", href: "https://leetcode.com/u/mummy_kaisi_hai/", score: "200+ questions" },
   ];
 
   return (

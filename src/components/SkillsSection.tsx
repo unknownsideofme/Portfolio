@@ -5,9 +5,9 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const SkillsSection = () => {
   const competitiveProgramming = [
-    { platform: "CodeChef", rating: "1792 max", color: "from-orange-500 to-red-500" },
-    { platform: "Codeforces", rating: "1457 max", color: "from-blue-500 to-purple-500" },
-    { platform: "LeetCode", rating: "Active", color: "from-yellow-500 to-orange-500" },
+    { platform: "CodeChef", rating: "1792 max", elo : "🌟🌟🌟" , color: "from-orange-500 to-red-500" },
+    { platform: "Codeforces", rating: "1485 max", elo :"Specialist", color: "from-blue-500 to-purple-500" },
+    { platform: "LeetCode", rating: "200+",elo:"Problems", color: "from-yellow-500 to-orange-500 " },
   ];
 
   const skillCategories = [
@@ -59,12 +59,28 @@ const SkillsSection = () => {
               
               <div className="grid md:grid-cols-3 gap-6">
                 {competitiveProgramming.map((platform, index) => (
-                  <div key={index} className={`bg-gradient-to-br ${platform.color} p-6 rounded-xl text-center hover:scale-105 transition-all duration-300 shadow-lg`}>
-                    <div className="text-white font-bold text-xl mb-2">{platform.platform}</div>
-                    <div className="text-white/90 text-lg font-medium">{platform.rating}</div>
+                  <div
+                    key={index}
+                    className={`bg-gradient-to-br ${platform.color} p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300 shadow-xl`}
+                  >
+                    
+                    <div className="text-white text-2xl font-semibold tracking-wide mb-1">
+                      {platform.platform}
+                    </div>
+
+                    
+                    <div className="text-white/90 text-lg font-medium mt-1">
+                      {platform.elo}
+                    </div>
+
+                    
+                    <div className="text-white/80 text-sm mt-1 tracking-tight">
+                      {platform.rating}
+                    </div>
                   </div>
                 ))}
               </div>
+
             </CardContent>
           </Card>
         </div>

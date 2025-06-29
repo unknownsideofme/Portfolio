@@ -7,7 +7,8 @@ const AboutSection = () => {
   const education = {
     degree: "Bachelors in Technology (Electronics and Communication Engineering)",
     institution: "Maulana Azad National Institute of Technology, Bhopal",
-    gpa: "9.12",
+    gpa: "9.24",
+    sgpa: "9.59",
     year: "2023-27",
     location: "Bhopal, Madhya Pradesh"
   };
@@ -51,11 +52,15 @@ const AboutSection = () => {
                     <span className="text-sm text-gray-600">{education.location}</span>
                     <span className="text-sm text-gray-600">{education.year}</span>
                   </div>
-                  <div className="mt-3">
+                  <div className="mt-3 flex">
                     <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium">
                       CGPA: {education.gpa}
                     </span>
+                    <span className="ml-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium">
+                      SGPA: {education.sgpa}
+                    </span>
                   </div>
+
                 </div>
 
                 <div>
