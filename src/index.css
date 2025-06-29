@@ -141,3 +141,22 @@
     from { width: 0%; }
   }
 }
+
+
+@keyframes fadeIn {
+  from {
+   
+    transform: translateY(30px);
+  }
+  to {
+    
+    transform: translateY(0);
+  }
+}
+
+.customanimated {
+  animation: fadeIn 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}
+

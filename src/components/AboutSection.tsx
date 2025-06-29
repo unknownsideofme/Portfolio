@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { GraduationCap, Trophy, Code2 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -25,8 +25,11 @@ const AboutSection = () => {
     { level: "Matriculation (CBSE, 2021)", school: "G.D. Goenka Public School", score: "95%" }
   ];
 
+  
+
+
   return (
-    <section id="about" className="py-20 bg-slate-50">
+    <section id="about" className="py-20 bg-slate-50 customanimated" >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
